@@ -44,3 +44,7 @@
 .lightText {
   color: #666;
 }
+
+.bolded {
+  font-weight: bold;
+}

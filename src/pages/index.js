@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
-          <Link href={``}>Ver tudo</Link>
+          <Link href={``} className={utilStyles.bolded}>Ver tudo</Link>
         </ul>
       </section>
     </Layout>

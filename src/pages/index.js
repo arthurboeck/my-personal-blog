@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
+import Layout, { siteTitle } from "../components/layout";
+import { getPostsData } from "../data/posts";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,29 +12,22 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Coloque aqui sua biografia de forma resumida. Coloque aqui sua
-          biografia de forma resumida.Coloque aqui sua biografia de forma
-          resumida.Coloque aqui sua biografia de forma resumida.Coloque aqui sua
-          biografia de forma resumida.Coloque aqui sua biografia de forma
-          resumida.
+          Formado em Sistemas de Informação em 2019, tenho na área de qualidade de software desde 2013. Recentemente conclui a Especialização em Engenharia de Softeware, em 2022, pela UNISINOS/RS, e atuando como Engenheiro de Qualidade no Sicredi. Gosto de aprender novos conhecimentos e realizar experimentos com novas tecnologias.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Últimas do blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/src/posts/${id}`}>{title}</Link>
+          {allPostsData.map(({ title, subTitle }) => (
+            <li className={utilStyles.listItem}>
+              <Link href={``}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <p>
-                  Confira algumas dicas que podem ajudar a alavancar sua
-                  carreira como desenvolvedor front-end.
-                </p>
+                <p>{subTitle}</p>
               </small>
             </li>
           ))}
-          <p>Ver tudo</p>
+          <Link href={``}>Ver tudo</Link>
         </ul>
       </section>
     </Layout>
@@ -42,7 +35,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getPostsData();
   return {
     props: {
       allPostsData,

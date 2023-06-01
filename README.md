@@ -1,6 +1,6 @@
 # BLOG PESSOAL
 
-Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend.
+Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend, na especializada em Arquitetura de Software Distribuido, cursada na PUCMG em 2023/01.
 
 ## Dependencias
 
@@ -10,14 +10,20 @@ Este projeto faz uso de [react](https://react.dev/learn), fazendo uso do framewo
 
 O projeto pode ser startado e executado com base nos seguintes comandos:
 
-Passo 1: Build do projet:
+Passo 1: Install de dependencias:
+```shell
+npm install
+```
+Passo 2: Build do projeto:
 ```shell
 npm run build
 ```
-Passo 2: Start do projet:
+Passo 3: Start do projeto:
 ```shell
 npm run start
 ```
+
+Após isso o projeto estará rodando na porta 3000, podendo ser acessado em [http://localhost:3000](http://localhost:3000).
 
 ## Considerações
 

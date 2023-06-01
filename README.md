@@ -10,11 +10,11 @@ Este projeto faz uso de [react](https://react.dev/learn), fazendo uso do framewo
 
 O projeto pode ser startado e executado com base nos seguintes comandos:
 
-Build do projet:
+Passo 1: Build do projet:
 ```shell
 npm run build
 ```
-Start do projet:
+Passo 2: Start do projet:
 ```shell
 npm run start
 ```

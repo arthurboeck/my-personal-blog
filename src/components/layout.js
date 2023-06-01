@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Seu nome'
+const name = 'Arthur Guterres Boeck'
 export const siteTitle = 'My first blog page'
 
 export default function Layout({ children, home }) {
@@ -44,11 +44,6 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
     </div>
   )
 }

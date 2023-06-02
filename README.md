@@ -27,6 +27,17 @@ Após isso o projeto estará rodando na porta 3000, podendo ser acessado em [htt
 
 Outros comandos podem ser encontrados na docto [Next.js CLI](https://nextjs.org/docs/pages/api-reference/next-cli).
 
+## Organização do projeto
+
+Os pacotes do projeto se distribuem da seguinte forma:
+- `public`: contém os arquivos estáticos do projeto, como imagens e fontes.
+- `src`: contém os arquivos de código fonte do projeto.
+  - `components`: contém os componentes do projeto.
+    - `.js`: contém os componentes em javascript.
+    - `.css`: contém os estilos dos componentes.
+  - `data`: contém os arquivos de dados do projeto, como os posts do blog.
+  - `pages`: contém as páginas do projeto.
+
 ## Considerações
 
 Este projeto foi criado com base no template disponibilizado pela Next.js, em [Learn Next.js](https://nextjs.org/learn/basics/create-nextjs-app).

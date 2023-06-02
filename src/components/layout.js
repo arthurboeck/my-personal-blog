@@ -1,54 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import styles from "./layout.module.css";
+import NavigationBar from "./navigation-bar/navigation-bar";
+import ProfileHeader from "./profile-header/profile-header";
+import ProfileInfo from "./profile-info/profile-info";
 
-const name = 'Seu nome'
-export const siteTitle = 'My first blog page'
+export const siteTitle = "My first blog page";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt={name}
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+    <div>
+      <div className={styles.colouredBackGround}>
+        <NavigationBar />
+        <div className={styles.container}>
+          <ProfileHeader home />
+          <ProfileInfo />
         </div>
-      )}
+      </div>
+      <div className={styles.whiteBackGround}>
+        <main>{children}</main>
+      </div>
     </div>
-  )
+  );
 }

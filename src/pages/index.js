@@ -1,9 +1,7 @@
 import Head from "next/head";
+import LastPostsSection from "../components/last-posts/last-posts";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date";
+import { getPostsData } from "../data/posts";
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,39 +9,13 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Coloque aqui sua biografia de forma resumida. Coloque aqui sua
-          biografia de forma resumida.Coloque aqui sua biografia de forma
-          resumida.Coloque aqui sua biografia de forma resumida.Coloque aqui sua
-          biografia de forma resumida.Coloque aqui sua biografia de forma
-          resumida.
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Últimas do blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/src/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <p>
-                  Confira algumas dicas que podem ajudar a alavancar sua
-                  carreira como desenvolvedor front-end.
-                </p>
-              </small>
-            </li>
-          ))}
-          <p>Ver tudo</p>
-        </ul>
-      </section>
+      <LastPostsSection dataList={allPostsData} />
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getPostsData();
   return {
     props: {
       allPostsData,

@@ -1,15 +1,15 @@
 .container {
   max-width: 36rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  padding: auto;
+  margin: 1rem auto auto;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.colouredBackGround {
+  background-color: #2F558D;
 }
 
-.backToHome {
-  margin: 3rem 0 0;
+.whiteBackGround {
+  background-color: white;
+  max-width: 36rem;
+  margin: 2rem auto 6rem;
 }

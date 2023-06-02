@@ -49,3 +49,22 @@
 .bolded {
   font-weight: bold;
 }
+
+.topBar {
+  float: none;
+  color: #000000;
+  text-align: center;
+  position: static;
+}
+
+.topBar a {
+  padding: 14px 16px;
+}
+
+.colouredBackGround {
+  background-color: #2F558D;
+}
+
+.whiteBackGround {
+  background-color: white;
+}

@@ -5,7 +5,7 @@ const defaultPost = {
 };
 
 export function getPostsData() {
-  const allPostsData = [defaultPost, defaultPost, defaultPost];
+  const posts = [defaultPost, defaultPost, defaultPost];
 
-  return allPostsData;
+  return posts;
 }

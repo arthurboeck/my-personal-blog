@@ -10,11 +10,6 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Formado em Sistemas de Informação em 2019, tenho na área de qualidade de software desde 2013. Recentemente conclui a Especialização em Engenharia de Softeware, em 2022, pela UNISINOS/RS, e atuando como Engenheiro de Qualidade no Sicredi. Gosto de aprender novos conhecimentos e realizar experimentos com novas tecnologias.
-        </p>
-      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Últimas do blog</h2>
         <ul className={utilStyles.list}>
@@ -27,7 +22,9 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
-          <Link href={``} className={utilStyles.bolded}>Ver tudo</Link>
+          <Link href={``} className={utilStyles.bolded}>
+            Ver tudo
+          </Link>
         </ul>
       </section>
     </Layout>

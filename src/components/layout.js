@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import NavigationBar from "../components/navigation-bar";
 import utilStyles from "../styles/utils.module.css";
 import styles from "./layout.module.css";
 
@@ -9,11 +10,7 @@ export const siteTitle = "My first blog page";
 export default function Layout({ children, home }) {
   return (
     <div>
-      <div className={utilStyles.topBar}>
-        <a href="/">Blog</a>
-        <a href="/">Sobre</a>
-        <a href="/">Descrição</a>
-      </div>
+      <NavigationBar />
       <div className={styles.container}>
         <header className={styles.header}>
           {home ? (

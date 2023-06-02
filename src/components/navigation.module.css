@@ -1,0 +1,10 @@
+.topBar {
+    float: none;
+    color: #000000;
+    text-align: center;
+    position: static;
+}
+
+.topBar a {
+    padding: 14px 16px;
+}

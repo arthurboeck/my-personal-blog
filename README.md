@@ -1,8 +1,8 @@
 # BLOG PESSOAL
 
-Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend, na especialização em Arquitetura de Software Distribuido, cursada na PUCMG em 2023/01.
-
 ## Dependencias
+
+Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend, na especialização em Arquitetura de Software Distribuido, cursada na PUCMG em 2023/01.
 
 Este projeto faz uso de [react](https://react.dev/learn), fazendo uso do framework [Next.js](https://nextjs.org/docs).
 
@@ -25,6 +25,8 @@ npm run start
 
 Após isso o projeto estará rodando na porta 3000, podendo ser acessado em [http://localhost:3000](http://localhost:3000).
 
+Outros comandos podem ser encontrados na docto [Next.js CLI](https://nextjs.org/docs/pages/api-reference/next-cli).
+
 ## Considerações
 
-Este projeto foi criado com base no template disponibilizado pela Next.js, em [Learn Next.js](https://nextjs.org/learn).
+Este projeto foi criado com base no template disponibilizado pela Next.js, em [Learn Next.js](https://nextjs.org/learn/basics/create-nextjs-app).

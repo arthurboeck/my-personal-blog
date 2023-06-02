@@ -1,6 +1,6 @@
 # BLOG PESSOAL
 
-Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend, na especializada em Arquitetura de Software Distribuido, cursada na PUCMG em 2023/01.
+Este componente foi desenvolvido para a disciplina de Arquitetura de Software Frontend, na especialização em Arquitetura de Software Distribuido, cursada na PUCMG em 2023/01.
 
 ## Dependencias
 

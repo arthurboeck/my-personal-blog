@@ -1,5 +1,15 @@
 .container {
   max-width: 36rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  padding: auto;
+  margin: 3rem auto auto;
+}
+
+.colouredBackGround {
+  background-color: #2F558D;
+}
+
+.whiteBackGround {
+  background-color: white;
+  max-width: 36rem;
+  margin: 2rem auto 6rem;
 }

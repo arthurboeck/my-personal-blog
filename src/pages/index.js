@@ -9,9 +9,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div style="whiteBackGround:">
-        <LastPostsSection dataList={allPostsData} />
-      </div>
+      <LastPostsSection dataList={allPostsData} />
     </Layout>
   );
 }

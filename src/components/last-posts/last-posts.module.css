@@ -10,10 +10,11 @@
   font-size: 1.5rem;
   line-height: 1.4;
   padding: auto;
+  padding-inline-start: 40px;
 }
 
 .padding1px {
-  padding-top: 1px;
+  padding: auto;
 }
 
 .lightText {

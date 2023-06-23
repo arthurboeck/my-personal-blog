@@ -21,10 +21,13 @@ jobs:
           with:
             node-version: 20.x
             cache: 'npm'
-        - run: npm run build
+        - name: Instal and Build
+          run: 
+            npm install
+            npm run build
 
     quality-gate:
-        name: ESLit Run
+        name: Quality Gate
         runs-on: ubuntu-latest
         steps: 
         - name: Checkout
@@ -34,4 +37,7 @@ jobs:
           with:
             node-version: 20.x
             cache: 'npm'
-        - run: npm run lint
+        - name: ES Lint Run
+          run: 
+            npm install
+            npm run lint

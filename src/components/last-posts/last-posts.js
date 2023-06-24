@@ -13,15 +13,13 @@ export default function LastPostsSection({dataList}) {
 function PostDataList({postList}) {
   return (
     <ul className={styles.list}>
-      {postList.map(({title, subTitle}, index) => (
-        <li key={index} className={styles.listItem}>
-          <Link href={``}>{title}</Link>
-          <br />
-          <small className={styles.lightText}>
-            <p>{subTitle}</p>
-          </small>
-        </li>
-      ))}
+      {postList.map(({title, subTitle}, index) => <li key={index} className={styles.listItem}>
+        <Link href={``}>{title}</Link>
+        <br />
+        <small className={styles.lightText}>
+          <p>{subTitle}</p>
+        </small>
+      </li>)}
       <ListAll />
     </ul>
   );

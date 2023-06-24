@@ -56,6 +56,6 @@ jobs:
               ~/package-lock.json
             key: ${{ runner.os }}-build-${{ hashFiles('**/package.json') }}
         - name: Install Dependencies
-          run: npm install
+          run: npm ci
         - name: Next Lint Run
           run: npm run lint

@@ -1,4 +1,4 @@
-import styles from "./profile-info.module.css";
+import styles from './profile-info.module.css';
 
 export default function ProfileInfo() {
   return (

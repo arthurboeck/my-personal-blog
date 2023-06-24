@@ -1,7 +1,7 @@
 const defaultPost = {
-  title: "5 dicas para sua carreira profissional",
+  title: '5 dicas para sua carreira profissional',
   subTitle:
-    "Confira algumas dicas que podem ajudar a alavancar sua carreira como desenvolvedor front-end.",
+    'Dicas para ajudar na sua carreira de desenvolvedor front-end.',
 };
 
 export function getPostsData() {

@@ -1,4 +1,4 @@
-import styles from "./navigation.module.css";
+import styles from './navigation.module.css';
 
 export default function NavigationBar() {
   return (

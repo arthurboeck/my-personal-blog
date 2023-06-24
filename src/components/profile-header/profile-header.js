@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./profile-header.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './profile-header.module.css';
 
-const name = "Arthur Guterres Boeck";
-const imagePath = "/images/profile.jpg";
+const name = 'Arthur Guterres Boeck';
+const imagePath = '/images/profile.jpg';
 
 export default function ProfileHeader(home) {
   return (

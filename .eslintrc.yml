@@ -16,3 +16,4 @@ plugins:
 rules: 
   require-jsdoc: off
   func-style: off
+  no-ternary: off

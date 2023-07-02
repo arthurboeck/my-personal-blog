@@ -1,34 +1,36 @@
 .headingMd {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: auto;
 }
 
 .headingLg {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: auto;
+  padding-inline-start: 40px;
 }
 
 .padding1px {
-    padding-top: 1px;
+  padding: auto;
 }
 
 .lightText {
-    color: #666;
+  color: #666;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: auto;
+  margin: auto;
 }
 
 .listItem {
-    margin: 0 0 1.25rem;
+  margin: 0 0 1.25rem;
 }
 
 .bolded {
-    font-weight: bold;
+  font-weight: bold;
 }

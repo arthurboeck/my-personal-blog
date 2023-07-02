@@ -1,14 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./profile-header.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './profile-header.module.css';
 
-const name = "Arthur Guterres Boeck";
-const imagePath = "/images/profile.jpg";
+const name = 'Arthur Guterres Boeck';
+const imagePath = '/images/profile.jpg';
 
 export default function ProfileHeader(home) {
   return (
     <header className={styles.header}>
-      {home ? (
+      {home ?
         <>
           <Image
             priority
@@ -19,8 +19,7 @@ export default function ProfileHeader(home) {
             alt={name}
           />
           <h1 className={styles.heading2Xl}>{name}</h1>
-        </>
-      ) : (
+        </> :
         <>
           <Link href="/">
             <Image
@@ -38,7 +37,7 @@ export default function ProfileHeader(home) {
             </Link>
           </h2>
         </>
-      )}
+      }
     </header>
   );
 }

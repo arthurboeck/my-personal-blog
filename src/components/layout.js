@@ -1,11 +1,11 @@
-import styles from "./layout.module.css";
-import NavigationBar from "./navigation-bar/navigation-bar";
-import ProfileHeader from "./profile-header/profile-header";
-import ProfileInfo from "./profile-info/profile-info";
+import NavigationBar from './navigation-bar/navigation-bar';
+import ProfileHeader from './profile-header/profile-header';
+import ProfileInfo from './profile-info/profile-info';
+import styles from './layout.module.css';
 
-export const siteTitle = "My first blog page";
+export const siteTitle = 'My first blog page';
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
   return (
     <div>
       <div className={styles.colouredBackGround}>

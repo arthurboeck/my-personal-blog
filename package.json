@@ -16,7 +16,10 @@
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4"
+    "eslint": "^8.44.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "13.4.4",
+    "eslint-plugin-css": "^0.8.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }

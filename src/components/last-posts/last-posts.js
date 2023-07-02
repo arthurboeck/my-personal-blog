@@ -1,7 +1,7 @@
-import Link from "next/link";
-import styles from "./last-posts.module.css";
+import Link from 'next/link';
+import styles from './last-posts.module.css';
 
-export default function LastPostsSection({ dataList }) {
+export default function LastPostsSection({dataList}) {
   return (
     <section className={`${styles.headingMd} ${styles.padding1px}`}>
       <h2 className={styles.headingLg}>Últimas do blog</h2>
@@ -10,18 +10,16 @@ export default function LastPostsSection({ dataList }) {
   );
 }
 
-function PostDataList({ postList }) {
+function PostDataList({postList}) {
   return (
     <ul className={styles.list}>
-      {postList.map(({ title, subTitle }, index) => (
-        <li key={index} className={styles.listItem}>
-          <Link href={``}>{title}</Link>
-          <br />
-          <small className={styles.lightText}>
-            <p>{subTitle}</p>
-          </small>
-        </li>
-      ))}
+      {postList.map(({title, subTitle}, index) => <li key={index}>
+        <Link href={``} className={styles.listItem}>{title}</Link>
+        <br />
+        <small className={styles.lightText}>
+          <p>{subTitle}</p>
+        </small>
+      </li>)}
       <ListAll />
     </ul>
   );

@@ -6,7 +6,7 @@ describe('LastPostsSection', () => {
     const dataList = [{ title: 'Post 1', subTitle: 'Sub Title 1' }];
     render(<LastPostsSection dataList={dataList} />);
 
-    const heading = screen.getByRole('heading', { level: 2 });
+    const heading = screen.getByTestId('last-posts-section').firstChild;
     expect(heading.textContent).toBe('Últimas do blog');
   });
 
@@ -30,7 +30,7 @@ describe('LastPostsSection', () => {
     const dataList = [{ title: 'Post 1', subTitle: 'Sub Title 1' }];
     render(<LastPostsSection dataList={dataList} />);
 
-    const link = screen.getByText('Ver tudo');
+    const link = screen.getByTestId('list-all');
     expect(link).not.toBeNull();
   });
 });

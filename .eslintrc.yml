@@ -7,12 +7,14 @@ parserOptions:
 plugins:
   - react
   - css
+  - jest
 extends:
   - google
   - plugin:react/recommended
   - plugin:css/all
   - next/core-web-vitals
   - eslint:all
+  - eslint-plugin-jest/all
 rules: 
   require-jsdoc: off
   func-style: off

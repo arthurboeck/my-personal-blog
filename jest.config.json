@@ -1,0 +1,19 @@
+{
+  "verbose": true,
+  "collectCoverage": true,
+  "errorOnDeprecated": true,
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "coverageReporters": ["json", "html"],
+  "transform": {
+    "\\.css$": "jest-transform-css",
+    "^.+\\.jsx?$": "babel-jest"
+  },
+  "testEnvironment": "jsdom"
+}

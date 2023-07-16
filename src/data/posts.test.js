@@ -4,12 +4,13 @@ const defaultPost = {
     subTitle: 'Dicas para ajudar na sua carreira de desenvolvedor front-end.',
     title: '5 dicas para sua carreira profissional',
 };
+const zero = 0;
 
 describe('getPostsData', () => {
     test('returns an array of posts', () => {
         const posts = getPostsData();
         expect(Array.isArray(posts)).toBe(true);
-        expect(posts.length).toBeGreaterThan(0);
+        expect(posts.length).toBeGreaterThan(zero);
     });
 
     test('each post in the array has the expected properties', () => {

@@ -1,6 +1,6 @@
+import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
 import NavigationBar from './navigation-bar';
-import '@testing-library/jest-dom/extend-expect';
 
 describe('NavigationBar', () => {
   test('renders links correctly', () => {

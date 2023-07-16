@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import Layout, { siteTitle } from './layout';
 import '@testing-library/jest-dom/extend-expect';
+import { render, screen } from '@testing-library/react';
+import Layout from './layout';
 
 describe('Layout', () => {
     test('renders navigation bar', () => {

@@ -3,7 +3,9 @@ import styles from './last-posts.module.css';
 
 export default function LastPostsSection({ dataList }) {
   return (
-    <section className={`${styles.headingMd} ${styles.padding1px}`} data-testid="last-posts-section">
+    <section
+      className={`${styles.headingMd} ${styles.padding1px}`}
+      data-testid="last-posts-section">
       <h2 className={styles.headingLg}>Últimas do blog</h2>
       <PostDataList postList={dataList} />
     </section>

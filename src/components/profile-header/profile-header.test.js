@@ -1,6 +1,6 @@
+import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
 import ProfileHeader from './profile-header';
-import '@testing-library/jest-dom/extend-expect';
 
 describe('ProfileHeader', () => {
   describe('ProfileHeader', () => {
@@ -12,13 +12,26 @@ describe('ProfileHeader', () => {
 
     test('renders profile image', () => {
       render(<ProfileHeader />);
-      const profileImage = screen.getByRole('img', { name: /Arthur Guterres Boeck/i });
+      const profileImage = screen.getByRole(
+        'img',
+        { name: /Arthur Guterres Boeck/u },
+      );
+
       expect(profileImage).toBeInTheDocument();
     });
 
     test('renders profile name', () => {
       render(<ProfileHeader />);
-      const profileName = screen.getByRole('heading', { level: 1, name: /Arthur Guterres Boeck/i });
+      const data = {
+        level: 1,
+        name: /Arthur Guterres Boeck/u,
+      };
+
+      const profileName = screen.getByRole(
+        'heading',
+        data,
+      );
+
       expect(profileName).toBeInTheDocument();
     });
   });

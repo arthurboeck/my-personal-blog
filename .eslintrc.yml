@@ -14,8 +14,11 @@ extends:
   - plugin:css/all
   - next/core-web-vitals
   - eslint:all
-  - eslint-plugin-jest/all
-rules: 
+  - plugin:jest/recommended
+rules:
   require-jsdoc: off
   func-style: off
   no-ternary: off
+  function-call-argument-newline: off
+  object-curly-spacing: off
+  max-len: off

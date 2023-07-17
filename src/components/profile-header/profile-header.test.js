@@ -13,8 +13,8 @@ describe('ProfileHeader', () => {
     test('renders profile image', () => {
       render(<ProfileHeader />);
       const profileImage = screen.getByRole(
-        'img',
-        { name: /Arthur Guterres Boeck/u },
+          'img',
+          { name: /Arthur Guterres Boeck/u },
       );
 
       expect(profileImage).toBeInTheDocument();
@@ -28,8 +28,8 @@ describe('ProfileHeader', () => {
       };
 
       const profileName = screen.getByRole(
-        'heading',
-        data,
+          'heading',
+          data,
       );
 
       expect(profileName).toBeInTheDocument();

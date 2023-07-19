@@ -1,6 +1,12 @@
 name: ChatGPT Bot
 
+permissions:
+  contents: read
+  pull-requests: write
+
 on:
+  pull_request:
+    types: [opened, reopened, synchronize]
   issue_comment:
     types: [created, edited]
   pull_request_review_comment:

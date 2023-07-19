@@ -11,7 +11,7 @@ export default function Layout({children}) {
       <div className={styles.colouredBackGround}>
         <NavigationBar />
         <div className={styles.container}>
-          <ProfileHeader home />
+          <ProfileHeader/>
           <ProfileInfo />
         </div>
       </div>

@@ -35,6 +35,7 @@ Os pacotes do projeto se distribuem da seguinte forma:
   - `components`: contém os componentes do projeto.
     - `.js`: contém os componentes em javascript.
     - `.css`: contém os estilos dos componentes.
+    - `.test`: contém os testes dos componentes.
   - `data`: contém os arquivos de dados do projeto, como os posts do blog.
   - `pages`: contém as páginas do projeto.
 

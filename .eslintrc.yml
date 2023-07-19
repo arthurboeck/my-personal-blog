@@ -7,13 +7,18 @@ parserOptions:
 plugins:
   - react
   - css
+  - jest
 extends:
   - google
   - plugin:react/recommended
   - plugin:css/all
   - next/core-web-vitals
   - eslint:all
-rules: 
+  - plugin:jest/recommended
+rules:
   require-jsdoc: off
   func-style: off
   no-ternary: off
+  function-call-argument-newline: off
+  object-curly-spacing: off
+  max-len: off

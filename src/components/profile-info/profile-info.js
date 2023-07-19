@@ -2,7 +2,7 @@ import styles from './profile-info.module.css';
 
 export default function ProfileInfo() {
   return (
-    <section className={styles.headingMd}>
+    <section className={styles.headingMd} data-testid="profile-info">
       <p>
         Formado em Sistemas de Informação em 2019, tenho na área de qualidade de
         software desde 2013. Recentemente conclui a Especialização em Engenharia

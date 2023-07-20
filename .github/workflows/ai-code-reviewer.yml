@@ -1,4 +1,4 @@
-name: OpenAI Chatbot
+name: OpenAI Code Reviewer
 
 permissions:
   contents: read
@@ -9,11 +9,11 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  hello_world_job:
+  code-review:
     runs-on: ubuntu-latest
-    name: ChatGPT explain code
+    name: OpenAI Code Reviewer
     steps:
-      - name: ChatGTP explain code
+      - name: OpenAI Code Reviewer
         uses: cirolini/chatgpt-github-actions@v1.3
         with:
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
